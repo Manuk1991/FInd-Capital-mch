@@ -1,0 +1,70 @@
+
+
+<style>
+.box01{
+ background-color:rgb(10, 9, 6);
+width: 765px;
+height: 60px;
+
+    }
+.Countr{
+    background-color:rgb(49, 226, 43);
+width: 765px;
+height: 220px;
+text-align: center;
+}
+.Capit{
+    background-color:rgb(11, 83, 83);
+width: 765px;
+height: 220px;
+text-align: center;
+}   
+.butCapital{
+
+    background-color:rgb(90, 177, 126);
+width: 40px;
+height: 40px;
+text-decoration-color: beige;
+
+}
+
+
+</style>
+<script>
+
+    
+
+</script>
+<div class = "box01">
+    <p>
+        <font size="20" color="red">
+            Find the capital city of the country`
+        </font>
+    </p> 
+
+    
+</div>
+
+
+<div class = " Countr">
+    <p>
+        <font size="20" color="red">
+#<%= Country%>#
+        </font>
+    </p> 
+    
+
+</div>
+
+
+<div class = "Capit">  <% for (let i = 0 ; i < Tartiv ; i++) { %>
+
+        <% let idButton = 'but'+i  %>
+
+    <input class=" butCapital"  type =  "button" value= "?" id="<%-idButton%>"  >
+
+<% } %>
+
+
+</div>
+
